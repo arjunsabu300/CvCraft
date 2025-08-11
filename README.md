@@ -100,9 +100,22 @@ npm run dev
 
 ## 📸 Screenshots
 
-(Add screenshots of your UI here for better presentation)
+Here’s a preview of **CvCrafts** in action:
 
----
+### Welcome Page
+![Home Page](src/Images/welcome.png)
+
+### 🏠 Home Page
+![Home Page](src/Images/Home.png)
+
+### 📊 Analysis Results
+![Analysis Results](src/Images/Analysis.png)
+
+### 📄 Resume Preview
+![Resume Upload](src/Images/Resumeprev.png)
+
+### 🆕 Generated Resume
+![Generated Resume](src/Images/Resumepdf.png)
 
 ## 🛡 Security Notes
 
