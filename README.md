@@ -1,12 +1,118 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# CvCraft 🎯  
+**AI-Powered Resume Customizer & ATS Optimizer**  
 
-Currently, two official plugins are available:
+CvCrafts helps job seekers tailor their resumes to match job descriptions by analyzing **keywords, ATS score, and suggesting improvements**. Powered by **Groq API**, it also generates an optimized version of the resume ready for submission.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features  
+- 📄 **Upload Resume** (PDF or DOCX)  
+- 📝 **Paste Job Description**  
+- 🔍 **Keyword Gap Analysis**  
+- 📊 **ATS Score Calculation**  
+- 🆕 **Generate Optimized Resume**  
+- ⚡ **Fast Processing** with Groq API  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 How It Works  
+1. **Upload your resume** in PDF/DOCX format.  
+2. **Enter or paste the job description** in the input field.  
+3. The system **extracts keywords** from the job description.  
+4. Your resume is analyzed for **missing keywords**.  
+5. **ATS Score** is calculated based on keyword match & formatting.  
+6. An **optimized resume** is generated for download.  
+
+---
+
+## 📂 Project Structure  
+```
+
+CvCrafts/
+│── backend/            # Node.js/Express server
+│── frontend/           # React.js frontend
+│── .env                # Environment variables
+│── package.json
+│── README.md
+
+````
+
+---
+
+## 🔑 Environment Variables (.env)  
+
+Create a `.env` file in the **root directory** with the following values:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+PORT=5000
+NODE_ENV=development
+FRONTEND_URL=http://localhost:5173
+MAX_FILE_SIZE=5242880
+SESSION_SECRET=your_secret_key_here
+````
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/CvCrafts.git
+cd CvCrafts
+```
+
+### 2️⃣ Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+```
+
+### 3️⃣ Install Frontend Dependencies
+
+```bash
+cd ../frontend
+npm install
+```
+
+---
+
+## ▶️ Running the Project
+
+### Start Backend Server
+
+```bash
+cd backend
+npm run dev
+```
+
+### Start Frontend (React)
+
+```bash
+cd ../frontend
+npm run dev
+```
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots of your UI here for better presentation)
+
+---
+
+## 🛡 Security Notes
+
+* Do **NOT** commit your `.env` file — it's already included in `.gitignore`.
+* Keep your **GROQ\_API\_KEY** private.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repo and submit a PR.
+go “Wow!” when they see it.
+```
