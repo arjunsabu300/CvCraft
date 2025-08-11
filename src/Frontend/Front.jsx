@@ -45,7 +45,7 @@ const ResumeCustomizerApp = () => {
     
     try {
       // Call the actual API
-      const response = await fetch('http://localhost:5000/api/process-resume', {
+      const response = await fetch('https://cvcraft-6w8a.onrender.com/api/process-resume', {
         method: 'POST',
         body: (() => {
           const formData = new FormData();
@@ -78,7 +78,7 @@ const ResumeCustomizerApp = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/generate-pdf', {
+      const response = await fetch('https://cvcraft-6w8a.onrender.com/api/generate-pdf', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

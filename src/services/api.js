@@ -1,7 +1,7 @@
 // src/services/api.js
 // Frontend API client for Resume Customizer
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://cvcraft-6w8a.onrender.com/api';
 
 class ResumeCustomizerAPI {
   constructor() {
