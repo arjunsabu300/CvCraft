@@ -138,7 +138,7 @@ const analyzeResumeWithGroq = async (resumeText, jobDescription) => {
           content: prompt
         }
       ],
-      model: "llama3-70b-8192", // or "llama3-8b-8192",
+      model: "llama-3.3-70b-versatile", // or "llama3-8b-8192",
       temperature: 0.3,
       max_tokens: 4000,
     });
@@ -194,7 +194,7 @@ const generateCustomizedResume = async (resumeText, jobDescription, analysis) =>
           content: prompt
         }
       ],
-      model: "llama3-70b-8192",
+      model: "llama-3.3-70b-versatile",
       temperature: 0.2,
       max_tokens: 3000,
     });
@@ -403,7 +403,7 @@ app.post('/api/keyword-suggestions', async (req, res) => {
           content: prompt
         }
       ],
-      model: "llama3-70b-8192",
+      model: "llama-3.3-70b-versatile",
       temperature: 0.2,
       max_tokens: 1500,
     });
